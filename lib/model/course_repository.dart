@@ -20,4 +20,11 @@ class CourseRepository {
     return coursesList;
   }
 
+  deleteCourse(String id) async {
+    final url = '$urlBaseApi/courses/$id';
+    var response = await http.delete(Uri.parse(url));
+    if (response.statusCode != 200) {
+      throw 'Problemas ao excluir curso';
+    }
+  }
 }

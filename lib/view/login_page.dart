@@ -27,7 +27,7 @@ class _LoginPageState extends State<LoginPage> {
                 width: MediaQuery.of(context).size.width * 0.8,
                 child: Image.asset("logotipo_firma.png"),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               TextFormField(
@@ -63,9 +63,9 @@ class _LoginPageState extends State<LoginPage> {
                           });
                         },
                         icon: showPassword == false
-                            ? Icon(Icons.visibility,
+                            ? const Icon(Icons.visibility,
                                 color: Colors.white, size: 18)
-                            : Icon(Icons.visibility_off,
+                            : const Icon(Icons.visibility_off,
                                 color: Colors.white, size: 18),
                       ),
                     ),
@@ -82,7 +82,7 @@ class _LoginPageState extends State<LoginPage> {
                   return null;
                 },
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               SizedBox(
@@ -96,12 +96,12 @@ class _LoginPageState extends State<LoginPage> {
                       Navigator.pushReplacement(
                         context,
                         MaterialPageRoute( 
-                          builder: (context) => HomePage(),
+                          builder: (context) => const HomePage(),
                         ),
                       );
                     }
                   },
-                  child: Text("Entrar"),
+                  child: const Text("Entrar"),
                 ),
               ),
             ],
